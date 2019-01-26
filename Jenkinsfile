@@ -4,7 +4,7 @@ node {
     }
     stage ('Config CLI Artifactory') {
         sh "curl -fL https://getcli.jfrog.io | sh"
-        sh "./jfrog rt c $ARTIFACTORY_ID --url=$ARTIFACTORY_URL --user=$ARTIFACTORY_USER --password=$ARTIFACTORY_PASSWORD"
+        sh "./jfrog rt c $ARTIFACTORY_ID --url=$ARTIFACTORY_URL --user=$ARTIFACTORY_USER --apikey=$ARTIFACTORY_PASSWORD"
     }
     stage ('Maven Build' ) {
         sh "./jfrog rt mvn 'clean install -DskipTests=true' configuration.yml --build-name=${env.JOB_NAME} --build-number=${env.BUILD_NUMBER}"
