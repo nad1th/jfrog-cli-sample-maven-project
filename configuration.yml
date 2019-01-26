@@ -1,0 +1,10 @@
+version: 1
+type: maven
+resolver:
+  snapshotRepo: ${env.VIRTUAL_REPO}
+  releaseRepo: ${env.VIRTUAL_REPO}
+  serverID: ${env.ARTIFACTORY_ID}
+deployer:
+  snapshotRepo: ${env.LOCAL_REPO}
+  releaseRepo: ${env.LOCAL_REPO}
+  serverID: ${env.ARTIFACTORY_ID}
