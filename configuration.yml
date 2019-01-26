@@ -1,8 +1,8 @@
 version: 1
 type: maven
 resolver:
-  snapshotRepo: virual-maven
-  releaseRepo: virual-maven
+  snapshotRepo: virtual-maven
+  releaseRepo: virtual-maven
   serverID: artifactory
 deployer:
   snapshotRepo: local-maven
