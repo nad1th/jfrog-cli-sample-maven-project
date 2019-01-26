@@ -1,6 +1,4 @@
-pipeline {
-  agent any
-  stages {
+node {
     stage ('GIT Clone') {
         checkout scm
     }
@@ -22,5 +20,4 @@ pipeline {
     stage ('Publish Build'){
         sh "jfrog rt bp ${env.JOB_NAME} ${env.BUILD_NUMBER}"
     }
-  }
 }
