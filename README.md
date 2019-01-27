@@ -1,4 +1,4 @@
-# jfrog-cli-sample-maven-project
+# Jfrog-cli-sample-maven-project
 
 ## Build & publish sample maven project to Artifactory using Jfrog CLI via Jenkins
 
@@ -15,7 +15,7 @@ To resolve maven dependencies via Artifactory and publish build artifacts to Art
 
 ### Setup Jenkins pipeline
 - Create pipeline job in Jenkins (New Item > Pipeline)
-- In the project configuration, select "pipeline script from SCM" and fill out the necessary details. 
+- In the project configuration, select "pipeline script from SCM" and fill out the necessary details.
 - Add credential ID "ARTIFACTORY_CREDENTIALS" under global credentials and provide authentication details for your local artifactory instance
 
 ### What is Jfrog CLI
