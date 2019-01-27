@@ -1,4 +1,7 @@
 node {
+    def ARTIFACTORY_ID = 'artifactory'
+    def ARTIFACTORY_URL = 'http://localhost:8081/artifactory'
+
     stage ('GIT Clone') {
         checkout scm
     }
